@@ -21,11 +21,11 @@ BASE_DIR = Path(__file__).resolve().parent
 @st.cache_resource
 def charger_modele():
     modele = joblib.load(
-        BASE_DIR / "modeles" / "svm_sigmoid.joblib"
+        BASE_DIR /"svm_sigmoid.joblib"
     )
 
     scaler = joblib.load(
-        BASE_DIR / "modeles" / "scaler.joblib"
+        BASE_DIR /"scaler.joblib"
     )
 
     return modele, scaler
